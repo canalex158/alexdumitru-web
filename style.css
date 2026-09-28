@@ -1,0 +1,838 @@
+/* ==============================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+
+    background: #f5f5f2;
+    color: #111111;
+
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+::selection {
+    background: #111;
+    color: white;
+}
+
+
+/* ==============================
+   HEADER
+================================ */
+
+.header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 6%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #666;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav a {
+    opacity: 0.65;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    opacity: 1;
+}
+
+.nav-button {
+    padding: 12px 20px;
+
+    background: #111;
+    color: white;
+
+    border-radius: 100px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   HERO
+================================ */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 140px 6% 80px;
+}
+
+.hero-badge {
+    padding: 9px 16px;
+
+    border: 1px solid #d1d1cd;
+    border-radius: 100px;
+
+    font-size: 13px;
+
+    margin-bottom: 35px;
+
+    color: #555;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 8vw, 120px);
+
+    line-height: 0.95;
+
+    letter-spacing: -6px;
+
+    max-width: 1200px;
+
+    font-weight: 700;
+}
+
+.hero h1 span {
+    color: #a7a7a0;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    margin-top: 40px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 40px;
+}
+
+.button-primary,
+.button-secondary,
+.button-light {
+
+    padding: 16px 24px;
+
+    border-radius: 100px;
+
+    font-weight: 500;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.button-primary {
+    background: #111;
+    color: white;
+}
+
+.button-primary span {
+    margin-left: 12px;
+}
+
+.button-primary:hover {
+    transform: translateY(-3px);
+}
+
+.button-secondary {
+    border: 1px solid #ccc;
+}
+
+.button-secondary:hover {
+    background: white;
+}
+
+.hero-price {
+    margin-top: 30px;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+.hero-price strong {
+    color: #222;
+}
+
+
+/* ==============================
+   MARQUEE
+================================ */
+
+.marquee {
+
+    background: #111;
+    color: white;
+
+    padding: 18px 0;
+
+    overflow: hidden;
+}
+
+.marquee-track {
+
+    display: flex;
+
+    gap: 35px;
+
+    width: max-content;
+
+    animation: marquee 22s linear infinite;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 12px;
+}
+
+@keyframes marquee {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* ==============================
+   SECTIONS
+================================ */
+
+.section {
+    padding: 140px 6%;
+}
+
+.section-top {
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+
+    margin-bottom: 80px;
+}
+
+.section-label {
+
+    text-transform: uppercase;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #888;
+}
+
+.section-top h2 {
+
+    font-size: clamp(35px, 5vw, 65px);
+
+    letter-spacing: -3px;
+
+    line-height: 1.05;
+
+    max-width: 900px;
+}
+
+
+/* ==============================
+   SERVICES
+================================ */
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.service-card {
+
+    padding: 40px;
+
+    min-height: 300px;
+
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    transition: 0.35s;
+}
+
+.service-card:hover {
+    background: white;
+}
+
+.service-number {
+
+    font-size: 12px;
+
+    color: #999;
+
+    margin-bottom: 70px;
+}
+
+.service-card h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 16px;
+}
+
+.service-card p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   STATEMENT
+================================ */
+
+.statement {
+
+    background: #111;
+    color: white;
+
+    padding: 160px 6%;
+}
+
+.statement p {
+
+    font-size: clamp(45px, 7vw, 100px);
+
+    line-height: 1;
+
+    letter-spacing: -5px;
+
+    max-width: 1400px;
+}
+
+.statement p + p {
+    margin-top: 60px;
+}
+
+.statement span {
+    color: #777;
+}
+
+
+/* ==============================
+   PROCESS
+================================ */
+
+.process {
+
+    border-top: 1px solid #ccc;
+}
+
+.process-item {
+
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+
+    padding: 40px 0;
+
+    border-bottom: 1px solid #ccc;
+}
+
+.process-item > span {
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+.process-item h3 {
+
+    font-size: 32px;
+
+    margin-bottom: 12px;
+}
+
+.process-item p {
+
+    max-width: 600px;
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   PRICE
+================================ */
+
+.price-section {
+
+    padding: 0 6% 140px;
+}
+
+.price-card {
+
+    background: #111;
+    color: white;
+
+    padding: 80px;
+
+    border-radius: 30px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 100px;
+}
+
+.price-card h2 {
+
+    font-size: clamp(45px, 6vw, 80px);
+
+    line-height: 1;
+
+    letter-spacing: -4px;
+
+    margin-top: 30px;
+}
+
+.price-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.price-info > p {
+
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+.price {
+
+    margin: 25px 0;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.price small {
+
+    color: #999;
+
+    margin-bottom: 6px;
+}
+
+.price strong {
+
+    font-size: 75px;
+
+    letter-spacing: -4px;
+}
+
+.price-note {
+
+    margin-bottom: 30px;
+
+    line-height: 1.6;
+}
+
+.button-light {
+
+    background: white;
+
+    color: #111;
+
+    width: fit-content;
+}
+
+.button-light:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   CONTACT
+================================ */
+
+.contact-section {
+
+    padding: 140px 6%;
+
+    text-align: center;
+}
+
+.contact-section h2 {
+
+    margin-top: 30px;
+
+    font-size: clamp(60px, 9vw, 130px);
+
+    line-height: 0.9;
+
+    letter-spacing: -6px;
+}
+
+.contact-section h2 span {
+    color: #aaa;
+}
+
+.contact-description {
+
+    max-width: 500px;
+
+    margin: 40px auto 70px;
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+.contact-options {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.contact-card {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    text-align: left;
+
+    padding: 30px 5px;
+
+    border-bottom: 1px solid #ccc;
+
+    transition: 0.3s;
+}
+
+.contact-card small {
+
+    color: #999;
+
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+
+    font-size: 22px;
+}
+
+.contact-card > span {
+
+    font-size: 25px;
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contact-card:hover > span {
+    transform: translate(4px, -4px);
+}
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+footer {
+
+    padding: 35px 6%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 1px solid #ccc;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+.footer-logo {
+
+    color: #111;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+.footer-logo span {
+    color: #999;
+}
+
+
+/* ==============================
+   ANIMATIONS
+================================ */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .nav {
+        display: none;
+    }
+
+    .hero h1 {
+        letter-spacing: -4px;
+    }
+
+    .section-top {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .price-card {
+
+        grid-template-columns: 1fr;
+
+        padding: 60px 40px;
+
+        gap: 60px;
+    }
+
+    .statement p {
+        letter-spacing: -3px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 22px;
+    }
+
+    .hero {
+
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .hero h1 {
+
+        font-size: 54px;
+
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .button-primary,
+    .button-secondary {
+
+        width: 100%;
+    }
+
+    .section {
+
+        padding: 100px 22px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+
+        min-height: auto;
+
+        padding: 30px;
+    }
+
+    .service-number {
+        margin-bottom: 40px;
+    }
+
+    .statement {
+
+        padding: 100px 22px;
+    }
+
+    .statement p {
+
+        font-size: 48px;
+
+        letter-spacing: -3px;
+    }
+
+    .process-item {
+
+        grid-template-columns: 50px 1fr;
+    }
+
+    .price-section {
+
+        padding: 0 22px 100px;
+    }
+
+    .price-card {
+
+        padding: 40px 25px;
+
+        border-radius: 20px;
+    }
+
+    .price-card h2 {
+
+        font-size: 45px;
+
+        letter-spacing: -3px;
+    }
+
+    .price strong {
+        font-size: 60px;
+    }
+
+    .contact-section {
+
+        padding: 100px 22px;
+    }
+
+    .contact-section h2 {
+
+        font-size: 60px;
+
+        letter-spacing: -4px;
+    }
+
+    .contact-card p {
+        font-size: 17px;
+    }
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+}

@@ -1,38 +1,65 @@
-const year = document.getElementById('year');
-if (year) year.textContent = new Date().getFullYear();
+// Año automático del footer
 
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
-if (toggle && nav) {
-  function closeMenu() {
-    toggle.setAttribute('aria-expanded', 'false');
-    toggle.setAttribute('aria-label', 'Abrir menú');
-    nav.classList.remove('open');
-  }
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!open));
-    toggle.setAttribute('aria-label', open ? 'Abrir menú' : 'Cerrar menú');
-    nav.classList.toggle('open', !open);
-  });
-  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
-  document.addEventListener('click', event => {
-    if (!nav.contains(event.target) && !toggle.contains(event.target)) closeMenu();
-  });
-}
+document.getElementById("year").textContent = new Date().getFullYear();
 
-const revealElements = document.querySelectorAll('.reveal');
-if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  revealElements.forEach(element => observer.observe(element));
-} else {
-  revealElements.forEach(element => element.classList.add('active'));
-}
+
+// Animaciones al hacer scroll
+
+const elementos = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("active");
+
+                observer.unobserve(entry.target);
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+elementos.forEach((elemento) => {
+
+    observer.observe(elemento);
+
+});
+
+
+// Header efecto al hacer scroll
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 80) {
+
+        header.style.position = "fixed";
+
+        header.style.background = "rgba(255,255,255,0.94)";
+
+        header.style.backdropFilter = "blur(15px)";
+
+        header.style.borderBottom = "1px solid rgba(0,0,0,0.08)";
+
+    } else {
+
+        header.style.position = "absolute";
+
+        header.style.background = "transparent";
+
+        header.style.backdropFilter = "none";
+
+        header.style.borderBottom = "none";
+
+    }
+
+});

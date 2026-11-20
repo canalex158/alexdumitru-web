@@ -44,7 +44,7 @@ window.addEventListener("scroll", () => {
 
         header.style.position = "fixed";
 
-        header.style.background = "rgba(245,245,242,0.88)";
+        header.style.background = "rgba(255,255,255,0.94)";
 
         header.style.backdropFilter = "blur(15px)";
 

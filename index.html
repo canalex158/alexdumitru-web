@@ -1,198 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111713">
-  <meta name="description" content="Portfolio de Alex Dumitru, diseñador y desarrollador web. Descubre proyectos reales como La Gloriosa y Restaural Gourmet. Diseño web para negocios de La Rioja y Navarra.">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Alex Dumitru. Diseño y desarrollo web independiente en La Rioja y Navarra. Proyectos reales, ideas claras y webs que funcionan.">
   <meta name="author" content="Alex Dumitru">
+  <link rel="canonical" href="https://alexdumitru.es/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
-  <meta property="og:title" content="Alex Dumitru — Portfolio de diseño y desarrollo web">
-  <meta property="og:description" content="Webs pensadas para negocios reales. Descubre mis proyectos: La Gloriosa y Restaural Gourmet.">
+  <meta property="og:title" content="Alex Dumitru — Diseño y desarrollo web">
+  <meta property="og:description" content="Diseño y desarrollo web independiente. Sin ruido, con intención.">
   <meta property="og:url" content="https://alexdumitru.es/">
   <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="https://alexdumitru.es/">
+  <title>Alex Dumitru — Diseño y desarrollo web</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Alex Dumitru — Portfolio | Diseño y desarrollo web</title>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Alex Dumitru",
-    "url": "https://alexdumitru.es/",
-    "jobTitle": "Diseñador y desarrollador web",
-    "sameAs": ["https://github.com/canalex158"],
-    "knowsAbout": ["Diseño web", "Desarrollo web", "WordPress", "SEO"]
-  }
+    {"@context":"https://schema.org","@type":"Person","name":"Alex Dumitru","url":"https://alexdumitru.es/","jobTitle":"Diseñador y desarrollador web","sameAs":["https://github.com/canalex158"],"knowsAbout":["Diseño web","Desarrollo web","WordPress","SEO"]}
   </script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="site-header" id="inicio">
-    <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Alex Dumitru, volver al inicio">alex<span>.</span>dumitru</a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="shell header-inner">
+      <a class="wordmark" href="#inicio" aria-label="Alex Dumitru, inicio">ALEX DUMITRU<span class="wordmark-period">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú"><span></span><span></span></button>
       <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto" class="nav-contact">Hablemos <span aria-hidden="true">↗</span></a>
+        <a href="#proyectos">Proyectos</a><a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
-
   <main id="contenido">
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Diseño y desarrollo web independiente</div>
-        <h1 id="hero-title">Webs que dejan <em>huella.</em></h1>
-        <p class="hero-lead">Soy <strong>Alex Dumitru.</strong> Diseño y desarrollo páginas web para negocios que quieren destacar, transmitir confianza y facilitar el contacto con sus clientes.</p>
-        <div class="hero-actions">
-          <a class="btn btn-dark" href="#proyectos">Explorar proyectos <span aria-hidden="true">↗</span></a>
-          <a class="btn btn-outline" href="#contacto">Trabajemos juntos <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="hero-footnote"><span class="tiny-asterisk" aria-hidden="true">✳</span> Proyectos reales · La Rioja y Navarra</div>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-topline"><span>DISEÑO / DESARROLLO WEB</span><span>INDEPENDIENTE · LA RIOJA / NAVARRA</span></div>
+      <h1 id="hero-title">Menos ruido.<br><span>Más impacto.</span></h1>
+      <div class="hero-bottom">
+        <p>Soy Alex Dumitru. Diseño y desarrollo páginas web para negocios que quieren una presencia digital clara, cuidada y que funcione.</p>
+        <a class="button button-light" href="#proyectos">Ver proyectos</a>
       </div>
-      <div class="hero-showcase" aria-label="Vista conceptual de dos proyectos del portfolio">
-        <div class="showcase-orbit orbit-one" aria-hidden="true"></div>
-        <div class="showcase-orbit orbit-two" aria-hidden="true"></div>
-        <div class="showcase-card showcase-gloriosa">
-          <span class="showcase-small">01 / RESTAURACIÓN</span>
-          <span class="showcase-brand serif">La Gloriosa</span>
-          <span class="showcase-tagline">Comer bien.<br>Quedarse a gusto.</span>
-          <span class="showcase-bottom">lagloriosa.es <span aria-hidden="true">↗</span></span>
-        </div>
-        <div class="showcase-card showcase-restaural">
-          <span class="showcase-small">02 / GASTRONOMÍA</span>
-          <span class="showcase-brand restaural-brand">RESTAURAL <small>GOURMET</small></span>
-          <span class="showcase-tagline">Una web a la altura<br>de cada detalle.</span>
-          <span class="showcase-bottom">restauralgourmet.com <span aria-hidden="true">↗</span></span>
-        </div>
-        <div class="showcase-stamp" aria-hidden="true">PORT<br>FOLIO<span>↗</span></div>
-      </div>
+      <div class="hero-index"><span>PORTFOLIO / 2026</span><span>DESLIZA PARA DESCUBRIR</span></div>
     </section>
 
-    <div class="intro-strip" aria-label="Especialidades">
-      <div class="container strip-content">
-        <span>Diseño con intención</span><span aria-hidden="true">✳</span>
-        <span>Desarrollo a medida</span><span aria-hidden="true">✳</span>
-        <span>Negocios reales</span><span aria-hidden="true">✳</span>
-        <span>Experiencias responsive</span>
-      </div>
-    </div>
-
-    <section class="section projects-section" id="proyectos" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <div><p class="overline">01 / TRABAJOS SELECCIONADOS</p><h2 id="projects-title">Proyectos que <span class="serif italic">hablan</span> por sí solos.</h2></div>
-          <p>Del primer concepto a la publicación. Estos son dos negocios reales para los que he desarrollado su presencia digital.</p>
-        </div>
-
-        <article class="project-card project-gloriosa reveal" aria-labelledby="gloriosa-title">
-          <div class="project-info">
-            <span class="project-index">PROYECTO 01 <span class="project-line"></span> 2026</span>
-            <p class="project-type">Cafetería · Restaurante / Calahorra</p>
-            <h3 id="gloriosa-title">La Gloriosa<span class="project-dot">.</span></h3>
-            <p class="project-description">Una web con personalidad para mostrar el buffet, la carta, los espacios y la información que los clientes necesitan antes de visitar el restaurante.</p>
-            <ul class="tag-list" aria-label="Características del proyecto"><li>Diseño web</li><li>Responsive</li><li>Información y reservas</li></ul>
-            <a class="project-link" href="https://lagloriosa.es/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de La Gloriosa (se abre en otra pestaña)">Ver proyecto en directo <span aria-hidden="true">↗</span></a>
-          </div>
-          <a class="project-visual visual-gloriosa" href="https://lagloriosa.es/" target="_blank" rel="noopener noreferrer" aria-label="Abrir La Gloriosa en una pestaña nueva">
-            <div class="browser-frame">
-              <div class="browser-bar"><div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>lagloriosa.es</span><span class="browser-lock" aria-hidden="true">↗</span></div>
-              <div class="mock-gloriosa">
-                <div class="mock-top"><span class="mock-logo serif">La Gloriosa</span><span class="mock-nav">INICIO &nbsp; CARTA &nbsp; CONTACTO</span></div>
-                <div class="mock-gloriosa-content">
-                  <span class="mock-kicker">CAFETERÍA · RESTAURANTE · CALAHORRA</span>
-                  <strong>Comer bien.<br><i>Quedarse a gusto.</i></strong>
-                  <span class="mock-button">DESCUBRE LA GLORIOSA <span aria-hidden="true">↗</span></span>
-                </div>
-                <div class="mock-gloriosa-accent" aria-hidden="true"><span>LG</span></div>
-              </div>
-            </div>
-            <span class="visual-note">Vista conceptual del proyecto</span>
+    <section class="selected section shell" id="proyectos" aria-labelledby="projects-title">
+      <div class="section-intro"><span class="section-label">01 / TRABAJO</span><div><h2 id="projects-title">Proyectos<br>seleccionados<span class="period">.</span></h2><p>Trabajo real. Soluciones pensadas para personas y negocios reales.</p></div></div>
+      <div class="projects">
+        <article class="project">
+          <a class="project-art project-art-gloriosa" href="https://lagloriosa.es/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de La Gloriosa">
+            <div class="art-meta"><span>01 / CALAHORRA</span><span>2026</span></div>
+            <div class="art-center"><span class="art-small">CAFETERÍA / RESTAURANTE</span><strong class="gloriosa-mark">La Gloriosa</strong><span class="art-sub">COMER BIEN. QUEDARSE A GUSTO.</span></div>
+            <span class="art-domain">LAGLORIOSA.ES</span>
           </a>
+          <div class="project-details"><div><span class="micro">01 — WEB CORPORATIVA</span><h3>La Gloriosa</h3><p>Una web con personalidad para presentar la carta, los espacios y la información esencial del restaurante.</p></div><a class="text-link" href="https://lagloriosa.es/" target="_blank" rel="noopener noreferrer">Visitar web</a></div>
         </article>
-
-        <article class="project-card project-restaural reveal" aria-labelledby="restaural-title">
-          <div class="project-info">
-            <span class="project-index">PROYECTO 02 <span class="project-line"></span> 2026</span>
-            <p class="project-type">Restaurante · Gourmet / Calahorra</p>
-            <h3 id="restaural-title">Restaural <span class="serif italic">Gourmet.</span></h3>
-            <p class="project-description">Una presencia digital cuidada para presentar su propuesta gastronómica, el menú diario, el catering y facilitar las reservas online.</p>
-            <ul class="tag-list" aria-label="Características del proyecto"><li>WordPress</li><li>Diseño responsive</li><li>Reservas online</li></ul>
-            <a class="project-link" href="https://restauralgourmet.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Restaural Gourmet (se abre en otra pestaña)">Ver proyecto en directo <span aria-hidden="true">↗</span></a>
-          </div>
-          <a class="project-visual visual-restaural" href="https://restauralgourmet.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Restaural Gourmet en una pestaña nueva">
-            <div class="browser-frame">
-              <div class="browser-bar"><div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>restauralgourmet.com</span><span class="browser-lock" aria-hidden="true">↗</span></div>
-              <div class="mock-restaural">
-                <div class="mock-restaural-top"><span class="mock-restaural-logo">RESTAURAL <small>GOURMET</small></span><span class="mock-nav">CARTA &nbsp; CATERING &nbsp; RESERVAS</span></div>
-                <div class="mock-restaural-body">
-                  <div><span class="mock-kicker">COCINA · TRADICIÓN · CALAHORRA</span><strong>El gusto por<br><i>lo auténtico.</i></strong><span class="mock-button">DESCUBRIR NUESTRA COCINA <span aria-hidden="true">↗</span></span></div>
-                  <div class="mock-restaural-art" aria-hidden="true"><div class="plate"><div class="food-leaf leaf-one"></div><div class="food-leaf leaf-two"></div><div class="food-leaf leaf-three"></div><div class="food-center"></div></div></div>
-                </div>
-              </div>
-            </div>
-            <span class="visual-note">Vista conceptual del proyecto</span>
+        <article class="project">
+          <a class="project-art project-art-restaural" href="https://restauralgourmet.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la web de Restaural Gourmet">
+            <div class="art-meta"><span>02 / CALAHORRA</span><span>2026</span></div>
+            <div class="art-center"><span class="art-small">RESTAURANTE / GASTRONOMÍA</span><strong class="restaural-mark">RESTAURAL <span>GOURMET</span></strong><span class="art-sub">COCINA. DETALLE. EXPERIENCIA.</span></div>
+            <span class="art-domain">RESTAURALGOURMET.COM</span>
           </a>
+          <div class="project-details"><div><span class="micro">02 — WEB CORPORATIVA / WORDPRESS</span><h3>Restaural Gourmet</h3><p>Diseño y desarrollo web para acercar su cocina, menú diario, catering y reservas a sus clientes.</p></div><a class="text-link" href="https://restauralgourmet.com/" target="_blank" rel="noopener noreferrer">Visitar web</a></div>
         </article>
-
-        <div class="projects-end reveal"><span>¿El siguiente proyecto puede ser el tuyo?</span><a href="#contacto">Cuéntame tu idea <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
-    <section class="about-section" id="sobre-mi" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div class="about-identity reveal"><p class="overline">02 / SOBRE MÍ</p><div class="about-monogram" aria-hidden="true">AD<span>.</span></div><p class="about-caption">Independiente por elección.<br>Implicado en cada detalle.</p></div>
-        <div class="about-copy reveal"><h2 id="about-title">Detrás de cada web hay una <em>buena historia.</em></h2><p>Soy Alex, diseñador y desarrollador web. Ayudo a pequeños negocios a tener una página que represente de verdad lo que hacen.</p><p>Me gusta cuidar tanto la parte visual como la técnica: que una web sea fácil de usar, funcione en el móvil y tenga un propósito claro.</p><div class="about-chips"><span>Diseño y desarrollo</span><span>WordPress</span><span>SEO básico</span><span>La Rioja · Navarra</span></div></div>
+    <section class="about section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="shell about-layout">
+        <div><span class="section-label">02 / SOBRE MÍ</span><div class="monogram" aria-hidden="true">AD.</div></div>
+        <div class="about-content"><h2 id="about-title">Diseño con intención.<br>Desarrollo con criterio.</h2><p>Me llamo Alex. Soy diseñador y desarrollador web independiente. Ayudo a pequeños negocios a construir una presencia digital que los represente de verdad.</p><p>Me importan los detalles, la velocidad y la facilidad de uso. Cada decisión tiene que aportar algo; si no aporta, sobra.</p><div class="capabilities"><span>Diseño web</span><span>Desarrollo</span><span>WordPress</span><span>SEO inicial</span><span>La Rioja y Navarra</span></div></div>
       </div>
     </section>
 
-    <section class="section services-section" id="servicios" aria-labelledby="services-title">
-      <div class="container">
-        <div class="section-head reveal"><div><p class="overline">03 / QUÉ PUEDO HACER POR TI</p><h2 id="services-title">De la idea a la <span class="serif italic">web publicada.</span></h2></div><p>No se trata solo de tener una web. Se trata de que tu negocio esté bien representado en internet.</p></div>
-        <div class="service-grid">
-          <article class="service-box reveal"><span class="service-icon" aria-hidden="true">↗</span><span class="service-num">01</span><h3>Diseño y desarrollo</h3><p>Páginas personalizadas, cuidadas visualmente y adaptadas a móviles, tablets y ordenadores.</p></article>
-          <article class="service-box reveal"><span class="service-icon" aria-hidden="true">✳</span><span class="service-num">02</span><h3>Funciones para tu negocio</h3><p>Cartas digitales, reservas, formularios, galerías y otras funcionalidades según lo que necesites.</p></article>
-          <article class="service-box reveal"><span class="service-icon" aria-hidden="true">◎</span><span class="service-num">03</span><h3>Publicación y soporte</h3><p>Configuración de dominio, hosting, SSL, SEO inicial y ayuda con los cambios posteriores.</p></article>
-        </div>
+    <section class="services section shell" id="servicios" aria-labelledby="services-title">
+      <div class="section-intro"><span class="section-label">03 / SERVICIOS</span><div><h2 id="services-title">Lo esencial.<br>Bien hecho<span class="period">.</span></h2><p>Desde la primera idea hasta una web publicada y preparada para crecer.</p></div></div>
+      <div class="service-list">
+        <article><span class="service-number">01</span><h3>Diseño y desarrollo web</h3><p>Webs a medida, responsive y con una identidad visual cuidada.</p></article>
+        <article><span class="service-number">02</span><h3>Funcionalidades para negocios</h3><p>Reservas, cartas digitales, formularios y herramientas útiles.</p></article>
+        <article><span class="service-number">03</span><h3>Publicación y soporte</h3><p>Dominio, alojamiento, SSL, SEO inicial y mantenimiento.</p></article>
       </div>
     </section>
 
-    <section class="process-section" aria-labelledby="process-title">
-      <div class="container process-grid">
-        <div class="reveal"><p class="overline">04 / CÓMO TRABAJO</p><h2 id="process-title">Simple, claro y <span class="serif italic">sin complicaciones.</span></h2></div>
-        <ol class="process-list">
-          <li class="reveal"><span>01</span><div><h3>Nos conocemos</h3><p>Hablamos de tu negocio, tus objetivos y qué necesita tu futura web.</p></div></li>
-          <li class="reveal"><span>02</span><div><h3>Diseño y construyo</h3><p>Preparo una propuesta visual y desarrollo las funcionalidades acordadas.</p></div></li>
-          <li class="reveal"><span>03</span><div><h3>Publicamos</h3><p>Revisamos los detalles y dejamos la web preparada para tus clientes.</p></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contacto" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div class="reveal"><p class="overline">05 / CONTACTO</p><h2 id="contact-title">Tu idea merece <em>salir al mundo.</em></h2><p>¿Tienes un negocio o una idea de proyecto? Hablemos y vemos cómo darle forma.</p><a class="btn btn-lime" href="mailto:jr@alexdumitru.es?subject=Nuevo%20proyecto%20web">Cuéntame tu proyecto <span aria-hidden="true">↗</span></a></div>
-        <div class="contact-details reveal"><span class="contact-label">HABLEMOS</span><a href="mailto:jr@alexdumitru.es">jr@alexdumitru.es <span aria-hidden="true">↗</span></a><a href="https://wa.me/34666272763" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a><a href="tel:+34666272763">666 272 763 <span aria-hidden="true">↗</span></a><span class="contact-location">La Rioja y Navarra · Proyectos online</span></div>
+    <section class="contact section" id="contacto" aria-labelledby="contact-title">
+      <div class="shell">
+        <span class="section-label">04 / CONTACTO</span>
+        <h2 id="contact-title">¿Hacemos<br>algo grande<span class="period">?</span></h2>
+        <div class="contact-bottom"><p>Si tienes un negocio, un proyecto o simplemente una idea, hablemos.</p><a class="button button-dark" href="mailto:jr@alexdumitru.es?subject=Nuevo%20proyecto%20web">Hablemos</a></div>
+        <div class="contact-links"><a href="mailto:jr@alexdumitru.es">jr@alexdumitru.es</a><a href="https://wa.me/34666272763" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="tel:+34666272763">666 272 763</a><a href="https://github.com/canalex158" target="_blank" rel="noopener noreferrer">GitHub</a></div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a class="brand footer-brand" href="#inicio">alex<span>.</span>dumitru</a>
-      <p>Diseño y desarrollo web con intención.</p>
-      <a class="hostinger-partner" href="https://www.hostinger.com/" target="_blank" rel="noopener noreferrer" aria-label="Hostinger Partner — Visitar Hostinger"><img src="hostinger-partner.png" alt="Hostinger Partner" width="125" height="47" loading="lazy"></a>
-      <p class="copyright">© <span id="year">2026</span> Alex Dumitru</p>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="shell footer-inner"><span class="footer-name">ALEX DUMITRU.</span><span>DISEÑO Y DESARROLLO WEB · LA RIOJA / NAVARRA</span><span>© <span id="year">2026</span> ALEX DUMITRU</span></div></footer>
   <script src="script.js" defer></script>
 </body>
 </html>

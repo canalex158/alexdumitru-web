@@ -280,20 +280,73 @@ section[id] { scroll-margin-top: 1.25rem; }
   margin-top: clamp(1.1rem, 3vw, 2rem);
 }
 
-.project-photo {
-  display: block;
+.project-cover {
+  display: grid;
+  position: relative;
+  container-type: inline-size;
   overflow: hidden;
-  aspect-ratio: 5 / 3;
+  place-items: center;
+  aspect-ratio: 2 / 1;
   border: 1px solid var(--line);
   border-radius: .5rem;
-  background: #202020;
+  text-align: center;
 }
 
-.project-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.project-cover > span {
+  position: relative;
+  display: block;
   transition: transform .25s ease;
+}
+
+.client-project:hover .project-cover > span {
+  transform: scale(1.045);
+}
+
+.cover-gloriosa {
+  background: #ededeb;
+  color: #171717;
+}
+
+.cover-gloriosa::before {
+  position: absolute;
+  inset: 14% 10%;
+  border: 1px solid #afafac;
+  border-radius: 50%;
+  content: "";
+}
+
+.cover-gloriosa > span {
+  font: italic 400 clamp(2rem, 11cqw, 4.25rem)/1 Georgia, serif;
+  letter-spacing: -.065em;
+}
+
+.cover-restaural {
+  background: #181818;
+  color: #f4f4f4;
+}
+
+.cover-restaural::before {
+  position: absolute;
+  inset: .75rem;
+  border: 1px solid #494949;
+  border-radius: .18rem;
+  content: "";
+}
+
+.cover-restaural > span {
+  font-size: clamp(1.25rem, 7.9cqw, 3rem);
+  font-weight: 600;
+  letter-spacing: .16em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.cover-restaural small {
+  display: block;
+  margin-top: .8em;
+  color: #bdbdbd;
+  font-size: .36em;
+  letter-spacing: .45em;
 }
 
 .project-details {
@@ -414,7 +467,7 @@ section[id] { scroll-margin-top: 1.25rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .project-photo img { transition: none; }
+  .project-cover > span { transition: none; }
 }
 
 .client-project { position: relative; }
@@ -426,5 +479,4 @@ section[id] { scroll-margin-top: 1.25rem; }
   outline: 2px solid currentColor;
   outline-offset: 5px;
 }
-.client-project:hover img { transform: scale(1.035); }
 .client-project a:hover .project-arrow { background: var(--foreground); color: var(--background); }
